@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	ps "github/ozzy/grpcgo/protoOut"
+	"github/ozzy/grpcgo/protofunc/complex"
 )
 
 func doSimple() *ps.Simple {
@@ -15,5 +16,6 @@ func doSimple() *ps.Simple {
 }
 
 func main() {
-	fmt.Println(doSimple())
+	//fmt.Println(doSimple())
+	fmt.Println(complex.DoComplex())
 }
